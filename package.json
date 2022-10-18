@@ -1,7 +1,7 @@
 {
   "name": "fitclub",
   "version": "0.1.0",
-  "homepage": "https://18sagar/fitness_website.github.io",
+  "homepage": "http://1807sagar.github.io/FitnessWebsite",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
@@ -21,11 +21,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build",
     "test": "jest",
-    "eject": "react-scripts eject",
-    "build": "react-scripts build"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build && cp build/index.html build/404.html",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
